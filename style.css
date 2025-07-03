@@ -5,7 +5,6 @@
 }
 .background {
     background-color: #121818;
-    height: 100vh;
     padding-top: 1px;
 
 }
@@ -13,7 +12,7 @@
     color: white;
     text-align: center;
     font-size: 40px;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .display {
     color: white;
@@ -30,12 +29,14 @@
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 33% 33% 33%;
+    width: 250px;      /* Add this */
+    height: 250px;     /* Add this */
     max-width: 300px;
 }
 .tile{
     border: 1px solid #ffffff;
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 100%;
+    max-height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,6 +63,6 @@
     padding: 8px;
     font-size: 20px;
     border-radius: 8px;
-    margin-left: 1em;
     cursor: pointer;
+    margin-bottom: 20px;
 }
